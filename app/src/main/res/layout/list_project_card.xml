@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ProjectCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/colorCard"
+    android:elevation="6dp">
+
+    <ImageView
+        android:id="@+id/ProjectCard_Thumbnail"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        tools:background="#000" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ProjectCard_Thumbnail"
+        android:layout_alignTop="@+id/ProjectCard_Thumbnail"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ProjectCard_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:gravity="center"
+            android:text="Project Name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ProjectCard_Thumbnail"
+            android:layout_toEndOf="@id/ProjectCard_Name"
+            android:gravity="center"
+            android:text="Click for details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
