@@ -48,7 +48,6 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjetVi
         Log.d("ProjectAdapter","onBindViewHolder()");
         final Projet projet = projets.get(position);
         holder.projetNom.setText(""+projet.getTitle());
-        holder.projetDescription.setText(""+projet.getDescrip());
         //TODO LOAD THUMBNAIL :
         //holder.projetImage.setImageDrawable(new ColorDrawable(projet.getImageProjet()));
 
@@ -74,9 +73,8 @@ public class ProjectAdapter extends RecyclerView.Adapter<ProjectAdapter.ProjetVi
             Log.d("ProjetViewHolder","ProjetViewHolder()");
             this.view = (RelativeLayout) itemView.findViewById(R.id.ProjectCard);;
             projetNom = (TextView) view.findViewById(R.id.ProjectCard_Name);
-            //projetDescription = (TextView) view.findViewById(R.id.description);
 
-            projetImage = (ImageView) view.findViewById(R.id.ProjectCard_Thumbnail);
+            //projetImage = (ImageView) view.findViewById(R.id.ProjectCard_Thumbnail);
         }
     }
 }

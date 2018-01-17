@@ -116,9 +116,9 @@ public class HomeActivity extends AbstractActivity {
 
         // My Projects
         if(myProjects != null){
-//            System.out.println("Projects updated");
-//            pAdapter = new ProjectAdapter(this, myProjects);
-//            projectsListView.setAdapter(pAdapter);
+            System.out.println("Projects updated");
+            pAdapter = new ProjectAdapter(this, myProjects);
+            projectsListView.setAdapter(pAdapter);
         }
 
 
